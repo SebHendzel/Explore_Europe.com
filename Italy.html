@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<title>Spain</title>
+          <style>
+            body, html{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: #009344;
+            }
+            
+            #page-container{
+              width: 75%;
+            }
+            
+            #header{
+              text-align: center;
+              padding-bottom: 3%;
+            }
+
+            #header img{
+              width:100%;
+              height: auto;
+              display: block;
+              float: center;
+            }      
+
+            .Topic2{
+              height: auto;
+            border-top: 5px dashed #009344;
+            padding-bottom: 30px;
+            border-bottom: 5px dashed #009344;
+            }
+            .Topic3{
+              height: auto;
+              padding-bottom: 30px;
+              border-bottom: 5px dashed #009344;
+            }
+
+            #Topic4{
+              padding-top: 10px;
+            }
+            
+            #content{
+              border: 5px dashed #CF2734;
+              text-align: center;
+              padding: 3%;
+              background:#FFFFFF ;
+              box-sizing: border-box;
+              overflow: auto;
+            }
+
+            @media (max-width: 768px) {
+            .page-container {
+                width: 15%;
+            }
+        }
+
+          .read-more{
+            font-size: 125%;
+          }
+            .image{
+              display: block; 
+              height:auto; 
+              width: 100%;
+              float: center;
+              border-radius: 30px;
+            }
+
+            .image-placeholder{
+              float: right;
+              padding: 20px;
+            }
+            
+            p{
+              font-size: 110%;
+            }
+         
+            .slider-container {
+             width: 80%; 
+             margin: 0 auto; 
+             overflow: hidden; 
+             position: relative; 
+            }
+
+
+            .slider {
+             display: flex;
+             transition: transform 0.5s ease-in-out; 
+             width: 100%; 
+            }
+
+
+            .slider img {
+             width: 100%; 
+             height: auto; 
+             flex-shrink: 0; 
+             border-radius: 30px; 
+            }
+
+          </style>
+</head>
+<body>
+
+	<div id="page-container">
+
+          <div id="header"><img src="images/Italy_banner.png" alt="banner"/></div>           
+                            
+            <div id="content">  
+              <h1>About Italy</h1>  
+              <p>
+
+                </p>
+
+                    <h1>Signature sights</h1>
+                    <img src="images/Ruins.png" class="image">
+                             <p> 
+                              An impressive – if rather confusing – spread of ruins, the Roman Forum was ancient Rome's showpiece center, 
+                              a grandiose district of temples, basilicas and vibrant public spaces. It can be hard to picture this nowadays but if you can get 
+                              your imagination going, there’s something truly magical about walking in the footsteps of Julius Caesar and other legendary figures. 
+                              Signature sights include the Arco di Settimio Severo, the Curia, the Tempio di Saturno and the Arco di Tito.
+                              
+                             <p>
+                              <br>
+                                <strong>Duration:</strong> 1 hour 40 minutes
+                                <br>
+                                <strong>Cost:</strong> 35 dollars per adult
+                                <br>
+                                <strong>Age Group: </strong>5-99
+                                <br>
+                                <br>
+                                <a class="read-more" href="https://www.alltrails.com/greece">Various trails</a> 
+
+                                <div class="Topic2">
+                                  
+                             <h1>Palatino</h1>
+                             <img src="images/Palatino.png" class="image">
+                             <p>
+                              An atmospheric area of towering pine trees, majestic ruins and memorable views, the Palatino (Palatine Hill) is the birthplace of Rome. This is where Romulus supposedly founded the city and where ancient Rome’s emperors lived in unabashed luxury.
+                              Archaeological excavations have unearthed evidence of Iron Age settlements on the hill but much of what you see today dates to Roman times. In fact, much of the site is covered by the ruins of a 1st-century CE royal residence which served as the main imperial palace for 300 years.
+                              The ruins can be complicated to decipher but look out for the stadio (stadium), the Domus Flavia and Domus Augustana (the public and private parts of the palace), and the Orti Farnesiani (a Renaissance Garden with swoon-inducing views over the Roman Forum).
+                              
+                             </p>
+                            </div>
+                             
+                            <div class="Topic3">
+
+                               <h1>The colluseum</h1> 
+                               <img src="images/Colosseum2.png" class="image">
+                               
+                                <p>
+                                  An electrifying, spine-tingling sight, the Colosseum is the most thrilling of Rome’s ancient monuments. It was here that gladiators met in fierce combat and condemned prisoners fought off wild beasts in front of baying, bloodthirsty crowds.
+
+                                  Two thousand years on and the 50,000-seat stadium is one of Italy’s top attractions, drawing more than seven million visitors a year.
+                                  
+                                </p>
+                                  <a class="read-more" href="">Book Now</a>
+                                </div>
+                               <div id="Topic4">
+                                  <h1>Food</h1>
+                                  <div class="slider-container">
+                                    <div class="slider">
+                                        <img src="images/Italy_food1.png" alt="Image 1">
+                                        <img src="images/Italy_food2.png" alt="Image 2">
+                                        <img src="images/Italy_food3.png" alt="Image 3">
+                                    </div>
+                                  </div>
+                                  <script>
+                                    const slider = document.querySelector('.slider');
+                                    let index = 0;
+
+                                    function showNextSlide() {
+                                    index++;
+                                    if (index >= 3) {
+                                    index = 0; 
+                                    }
+                                    slider.style.transform = `translateX(-${index * 100}%)`;
+                                    } 
+                                    setInterval(showNextSlide, 3000);
+                                  </script>
+                                  <p>
+                                    
+                                  </p>
+                                     
+                                    </div>
+
+                            </div>
+
+           
+
+    </div>
+</body>
+
+
+          </html>

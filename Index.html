@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europe Travel Map</title>
+    <style>
+
+
+        #container{
+            width: 150%;
+            
+        }
+
+        body,html{
+            background-color: #879887;
+            display: flex;
+              justify-content: center;
+              align-items: center;
+        }
+        .banner{
+            text-align: center;
+        
+        }
+
+        .map-container {
+            position: relative;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+    
+        .map-base {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        
+        .country {
+            position: absolute;
+            width: 10%;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            cursor: pointer;
+        }
+
+       
+        .country:hover {
+            transform: scale(1.15); 
+            opacity: 0.8; 
+        }
+        
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 15%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="banner">
+<img src="images/Europe_banner.jpg" alt="Europe!" style="height: 150%; width: 90%;"></div>
+  
+    <div class="map-container">
+        
+        <img src="images/Europe_3.png" alt="Europe Map" class="map-base">
+
+        <a href="Greece.html">
+            <img src="images/Greece.png" alt="Greece" class="country" style="top: 85.7%; left: 63%; scale: 123%;">
+        </a>
+
+        <a href="Spain.html">
+            <img src="images/Spain.png" alt="Spain" class="country" style="top: 85.25%; left: 11.4%; scale: 247%;">
+        </a>
+        
+        
+        <a href="Germany.html">
+            <img src="images/Germany.png" alt="Germany" class="country" style="top: 55.5%; left: 38.25%; scale: 175.5%;">
+        </a>
+        
+
+        <a href="Sweden.html">
+            <img src="images/Sweden.png" alt="Sweden" class="country" style="top: 20%; left: 52%; scale: 243%;">
+        </a>
+
+
+        <a href="Italy.html">
+            <img src="images/Italy.png" alt="Italy" class="country" style="top: 77.8%; left: 42%; scale: 222%;">
+        </a>
+
+
+        <a href="France.html">
+            <img src="images/France.png" alt="France" class="country" style="top: 68%; left: 20.75%; scale: 255%;">
+        </a>
+
+
+        <a href="Ireland.html">
+            <img src="images/Ireland.png" alt="Ireland" class="country" style="top: 49.5%; left: 1%; scale: 82%;">
+        </a>
+    </div>
+</div>
+</body>
+</html>
